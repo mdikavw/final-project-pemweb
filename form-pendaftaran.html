@@ -127,89 +127,91 @@
 						<ol class="breadcrumb mb-4">
 							<li class="breadcrumb-item active">Pendaftaran</li>
 						</ol>
-						<div class="row">
-							<div class="col-xl-4 col-md-6">
-								<div class="mb-3">
-									<label for="input-nama" class="form-label">Nama</label>
-									<input
-										type="text"
-										class="form-control"
-										id="input-nama"
-										placeholder="Nama"
-										name="nama"
-									/>
-								</div>
-								<div class="mb-3">
-									<label for="input-nisn" class="form-label">NISN</label>
-									<input
-										type="text"
-										class="form-control"
-										id="input-nisn"
-										placeholder="NISN"
-										name="nisn"
-									/>
-								</div>
-								<div class="mb-3">
-									<label for="input-provinsi" class="form-label"
-										>Provinsi</label
-									>
-									<input
-										type="text"
-										class="form-control"
-										id="input-provinsi"
-										placeholder="Provinsi"
-										name="provinsi"
-									/>
-								</div>
-								<div class="mb-3">
-									<label for="input-kabupaten" class="form-label"
-										>Kabupaten</label
-									>
-									<input
-										type="text"
-										class="form-control"
-										id="input-kabupaten"
-										placeholder="Kabupaten"
-										name="kabupaten"
-									/>
-								</div>
-								<div class="mb-3">
-									<label for="input-kecamatan" class="form-label"
-										>Kecamatan</label
-									>
-									<input
-										type="text"
-										class="form-control"
-										id="input-kecamatan"
-										placeholder="Kecamatan"
-										name="kecamatan"
-									/>
-								</div>
-								<div class="mb-3">
-									<label for="input-desa" class="form-label">Desa</label>
-									<input
-										type="text"
-										class="form-control"
-										id="input-desa"
-										placeholder="Desa"
-										name="desa"
-									/>
-								</div>
-								<div class="mb-3">
-									<label for="input-kk" class="form-label"
-										>Kartu Keluarga</label
-									>
-									<input class="form-control" type="file" id="input-kk" />
-								</div>
-								<div class="mb-3">
-									<label for="input-ijazah" class="form-label">Ijazah</label>
-									<input class="form-control" type="file" id="input-ijazah" />
-								</div>
-								<div class="mb-3">
-									<input class="btn btn-primary" type="submit" />
+						<form action="form-pendaftaran-action.php" method="post">
+							<div class="row">
+								<div class="col-xl-4 col-md-6">
+									<div class="mb-3">
+										<label for="input-nama" class="form-label">Nama</label>
+										<input
+											type="text"
+											class="form-control"
+											id="input-nama"
+											placeholder="Nama"
+											name="nama"
+										/>
+									</div>
+									<div class="mb-3">
+										<label for="input-nisn" class="form-label">NISN</label>
+										<input
+											type="text"
+											class="form-control"
+											id="input-nisn"
+											placeholder="NISN"
+											name="nisn"
+										/>
+									</div>
+									<div class="mb-3">
+										<label for="input-provinsi" class="form-label"
+											>Provinsi</label
+										>
+										<input
+											type="text"
+											class="form-control"
+											id="input-provinsi"
+											placeholder="Provinsi"
+											name="provinsi"
+										/>
+									</div>
+									<div class="mb-3">
+										<label for="input-kabupaten" class="form-label"
+											>Kabupaten</label
+										>
+										<input
+											type="text"
+											class="form-control"
+											id="input-kabupaten"
+											placeholder="Kabupaten"
+											name="kabupaten"
+										/>
+									</div>
+									<div class="mb-3">
+										<label for="input-kecamatan" class="form-label"
+											>Kecamatan</label
+										>
+										<input
+											type="text"
+											class="form-control"
+											id="input-kecamatan"
+											placeholder="Kecamatan"
+											name="kecamatan"
+										/>
+									</div>
+									<div class="mb-3">
+										<label for="input-desa" class="form-label">Desa</label>
+										<input
+											type="text"
+											class="form-control"
+											id="input-desa"
+											placeholder="Desa"
+											name="desa"
+										/>
+									</div>
+									<!-- <div class="mb-3">
+										<label for="input-kk" class="form-label"
+											>Kartu Keluarga</label
+										>
+										<input class="form-control" type="file" id="input-kk" />
+									</div>
+									<div class="mb-3">
+										<label for="input-ijazah" class="form-label">Ijazah</label>
+										<input class="form-control" type="file" id="input-ijazah" />
+									</div> -->
+									<div class="mb-3">
+										<input class="btn btn-primary" type="submit" />
+									</div>
 								</div>
 							</div>
-						</div>
+						</form>
 					</div>
 				</main>
 			</div>

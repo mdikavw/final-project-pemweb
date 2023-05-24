@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	if(!isset($_SESSION['nisn']) and $_SESSION['status'] === 'login'){
+	if(!isset($_SESSION['nisn'])){
 		header("Location: login.php");
 	}
 ?>
@@ -66,7 +66,7 @@
 						<li><a class="dropdown-item" href="#!">Settings</a></li>
 						<li><a class="dropdown-item" href="#!">Activity Log</a></li>
 						<li><hr class="dropdown-divider" /></li>
-						<li><a class="dropdown-item" href="#!">Logout</a></li>
+						<li><a class="dropdown-item" href="logout-action.php">Logout</a></li>
 					</ul>
 				</li>
 			</ul>
