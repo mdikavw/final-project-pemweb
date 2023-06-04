@@ -76,7 +76,7 @@
 				<nav class="sb-sidenav accordion sb-sidenav-dark">
 					<div class="sb-sidenav-menu">
 						<div class="nav">
-							<a class="nav-link" href="index.php">
+							<a class="nav-link" href="beranda.html">
 								<div class="sb-nav-link-icon">
 									<i class="fa-solid fa-house"></i>
 								</div>
@@ -84,7 +84,7 @@
 							</a>
 							<a
 								class="nav-link collapsed"
-								href="#"
+								href="beranda.html"
 								data-bs-toggle="collapse"
 								data-bs-target="#collapseLayouts"
 								aria-expanded="false"
@@ -108,10 +108,13 @@
 									<a class="nav-link" href="form-pendaftaran.html"
 										>Pendaftaran Peserta Didik Baru</a
 									>
-									<a class="nav-link" href="#">Cek Status Pendaftaran</a>
+									<a class="nav-link" href="edit-pendaftaran.html"
+										>Edit Pendaftaran</a
+									>
+									<a class="nav-link" href="cek-status.html">Cek Status Pendaftaran</a>
 								</nav>
 							</div>
-							<a class="nav-link" href="#">
+							<a class="nav-link" href="peringkat.html">
 								<div class="sb-nav-link-icon">
 									<i class="fa-solid fa-ranking-star"></i>
 								</div>
@@ -128,40 +131,9 @@
 				</nav>
 			</div>
 			<div id="layoutSidenav_content">
-				<main>
-					<div class="container-fluid px-4">
-						<h1 class="mt-4">Beranda</h1>
-						<ol class="breadcrumb mb-4">
-							<li class="breadcrumb-item active">Beranda</li>
-						</ol>
-						<div class="row">
-							<div class="col-xl-3 col-md-6">
-								<div class="card bg-primary text-white mb-4">
-									<div class="card-body">
-										<h2>500+</h2>
-										<p>Pendaftar</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-xl-3 col-md-6">
-								<div class="card bg-primary text-white mb-4">
-									<div class="card-body">
-										<h2>250</h2>
-										<p>Kuota Penerimaan</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-xl-3 col-md-6">
-								<div class="card bg-primary text-white mb-4">
-									<div class="card-body">
-										<h2>A</h2>
-										<p>Terakreditasi</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</main>
+				<?php
+					include('module.php');
+				?>
 			</div>
 		</div>
 	</body>

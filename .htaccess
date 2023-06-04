@@ -1,0 +1,7 @@
+RewriteEngine On
+
+RewriteRule ^beranda.html$ index.php?page=home [L]
+RewriteRule ^form-pendaftaran.html$ index.php?page=form-pendaftaran [L]
+RewriteRule ^edit-pendaftaran.html$ index.php?page=edit-pendaftaran [L]
+RewriteRule ^cek-status.html$ index.php?page=cek-status [L]
+RewriteRule ^peringkat.html$ index.php?page=peringkat [L]

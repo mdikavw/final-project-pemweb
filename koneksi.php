@@ -6,9 +6,7 @@
     $mysqli = new mysqli($host, $username, $password, $db);
 
     if($mysqli->connect_error){
-        echo "Failed to connect MySQL".$mysqli->connect_error;
+        echo "Failed to connect MySQL".$mysqli->connect_error."<br>";
         exit();
-    } else {
-        echo "Connection successful";
-    }
+    } 
 ?>
