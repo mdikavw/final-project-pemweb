@@ -2,10 +2,6 @@
 	session_start();
 	if(!isset($_SESSION['nisn'])){
 		header("Location: login.php");
-	} else {
-		if($_SESSION['nisn'] === 'admin'){
-			header("Location: admin.php");
-		}
 	}
 ?>
 
@@ -60,13 +56,13 @@
             <nav class="sb-sidenav accordion sb-sidenav-dark">
                 <div class="sb-sidenav-menu">
                     <div class="nav">
-                        <a class="nav-link" href="beranda.html">
+                        <a class="nav-link" href="beranda-admin.html">
                             <div class="sb-nav-link-icon">
                                 <i class="fa-solid fa-house"></i>
                             </div>
                             Beranda
                         </a>
-                        <a class="nav-link collapsed" href="beranda.html" data-bs-toggle="collapse"
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
                             data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
                             <div class="sb-nav-link-icon">
                                 <i class="fa-solid fa-square-pen"></i>
@@ -79,31 +75,18 @@
                         <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne"
                             data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav">
-                                <a class="nav-link" href="form-pendaftaran.html">Pendaftaran Peserta Didik Baru</a>
-                                <a class="nav-link" href="edit-pendaftaran.html">Edit Pendaftaran</a>
-                                <a class="nav-link" href="cek-status.html">Cek Status Pendaftaran</a>
+                                <a class="nav-link" href="cek-pendaftaran-admin.html">Cek Pendaftaran</a>
+                                <a class="nav-link" href="status-pendaftaran-admin.html">Buka/Tutup Pendaftaran</a>
                             </nav>
                         </div>
-                        <a class="nav-link" href="peringkat.html">
-                            <div class="sb-nav-link-icon">
-                                <i class="fa-solid fa-ranking-star"></i>
-                            </div>
-                            Peringkat
-                        </a>
-                        <a class="nav-link" href="#">
-                            <div class="sb-nav-link-icon">
-                                <i class="fa-solid fa-circle-info"></i>
-                            </div>
-                            Informasi
-                        </a>
                     </div>
                 </div>
             </nav>
         </div>
         <div id="layoutSidenav_content">
             <?php
-					include('module.php');
-				?>
+				include('module.php');
+			?>
         </div>
     </div>
 </body>

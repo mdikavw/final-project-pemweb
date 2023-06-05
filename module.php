@@ -14,8 +14,20 @@
         include('pages/cek-status.php');
     } else if($page == 'peringkat'){
         include('pages/peringkat.php');
-    } 
+    } else if($page == 'beranda-admin'){
+        include('pages/beranda-admin.php');
+    } else if($page == 'cek-pendaftaran-admin'){
+        include('pages/cek-pendaftaran-admin.php');
+    } else if($page == 'status-pendaftaran-admin'){
+        include('pages/status-pendaftaran-admin.php');
+    } else if($page == 'edit-data-peserta'){
+        include('pages/edit-data-peserta.php');
+    }
     else{
-        include('pages/beranda.php');
+        if($_SESSION['nisn'] != 'admin'){
+            include('pages/beranda.php');
+        } else {
+            include('pages/beranda-admin.php');
+        }
     };
 ?>
