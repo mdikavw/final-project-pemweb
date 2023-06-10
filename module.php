@@ -18,8 +18,8 @@
         include('pages/beranda-admin.php');
     } else if($page == 'cek-pendaftaran-admin'){
         include('pages/cek-pendaftaran-admin.php');
-    } else if($page == 'status-pendaftaran-admin'){
-        include('pages/status-pendaftaran-admin.php');
+    } else if($page == 'setelan-pendaftaran-admin'){
+        include('pages/setelan-pendaftaran-admin.php');
     } else if($page == 'edit-data-peserta'){
         include('pages/edit-data-peserta.php');
     }

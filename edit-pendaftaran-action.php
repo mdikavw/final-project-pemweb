@@ -50,6 +50,7 @@
         nama_file_ijazah = '$filename_ijazah',
         rerata = '$rerata',
         nama_file_rapor = '$filename_rapor'
+        WHERE nisn = $nisn;
         ";
         $res = $mysqli->query($sql);
         if($res){

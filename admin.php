@@ -76,7 +76,7 @@
                             data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav">
                                 <a class="nav-link" href="cek-pendaftaran-admin.html">Cek Pendaftaran</a>
-                                <a class="nav-link" href="status-pendaftaran-admin.html">Buka/Tutup Pendaftaran</a>
+                                <a class="nav-link" href="setelan-pendaftaran-admin.html">Buka/Tutup Pendaftaran</a>
                             </nav>
                         </div>
                     </div>

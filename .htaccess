@@ -7,6 +7,6 @@ RewriteRule ^cek-status.html$ index.php?page=cek-status [L]
 RewriteRule ^peringkat.html$ index.php?page=peringkat [L]
 RewriteRule ^beranda-admin.html$ admin.php?page=beranda-admin [L]
 RewriteRule ^cek-pendaftaran-admin.html$ admin.php?page=cek-pendaftaran-admin [L]
-RewriteRule ^status-pendaftaran-admin.html$ admin.php?page=status-pendaftaran-admin [L]
+RewriteRule ^setelan-pendaftaran-admin.html$ admin.php?page=setelan-pendaftaran-admin [L]
 RewriteRule ^([0-9]+)$ admin.php?&nisn=$1&page=edit-data-peserta [L]
 

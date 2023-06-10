@@ -1,8 +1,6 @@
 <?php
     include_once('koneksi.php');
     $nisn = $_SESSION['nisn'];
-    $sql = "SELECT * FROM data_pendaftar WHERE nisn = '$nisn'";
-    $res = $mysqli->query($sql);
 ?>
 <main>
     <div class="container-fluid px-4">
@@ -11,19 +9,25 @@
             <li class="breadcrumb-item active">Edit Pendaftaran</li>
         </ol>
         <?php
-    if($res->num_rows > 0){
-        while($row = $res->fetch_assoc()){
-            $nama = $row['nama'];
-            $provinsi = $row['provinsi'];
-            $kabupaten = $row['kabupaten'];
-            $kecamatan = $row['kecamatan'];
-            $desa = $row['desa'];
-            $nama_file_kk = $row['nama_file_kk'];
-            $nama_file_ijazah = $row['nama_file_ijazah'];
-            $nama_file_rapor = $row['nama_file_rapor'];
-            $rerata = $row['rerata'];
-            $foto = "files-foto/".$row['nama_file_foto'];
-        }
+        $status_res = $mysqli->query("SELECT status_aksi FROM aksi WHERE id = 2");
+        if($status_res->fetch_column() == 0){
+            echo("Edit pendaftaran telah ditutup");
+        } else {
+        $sql = "SELECT * FROM data_pendaftar WHERE nisn = '$nisn'";
+        $res = $mysqli->query($sql);
+        if($res->num_rows > 0){
+            while($row = $res->fetch_assoc()){
+                $nama = $row['nama'];
+                $provinsi = $row['provinsi'];
+                $kabupaten = $row['kabupaten'];
+                $kecamatan = $row['kecamatan'];
+                $desa = $row['desa'];
+                $nama_file_kk = $row['nama_file_kk'];
+                $nama_file_ijazah = $row['nama_file_ijazah'];
+                $nama_file_rapor = $row['nama_file_rapor'];
+                $rerata = $row['rerata'];
+                $foto = "files-foto/".$row['nama_file_foto'];
+            }
 ?>
         <form action="edit-pendaftaran-action.php" method="post" enctype="multipart/form-data"
             class="container border border-1 rounded-4 p-4 mb-3">
@@ -191,4 +195,5 @@
     } else {
         echo "User belum terdaftar";
     }
+}
 ?>

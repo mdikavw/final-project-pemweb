@@ -12,6 +12,10 @@
         </ol>
 
         <?php
+$status_res = $mysqli->query("SELECT status_aksi FROM aksi WHERE id = 1");
+if($status_res->fetch_column() == 0){
+    echo("Pendaftaran telah ditutup");
+} else {
 if($res->num_rows > 0){
 	echo("Data Anda ditemukan dalam database");
 ?>
@@ -117,4 +121,5 @@ if($res->num_rows > 0){
 </main>
 <?php
 	}
+}
 ?>
