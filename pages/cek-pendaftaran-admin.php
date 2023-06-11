@@ -16,12 +16,13 @@
             <li class="breadcrumb-item active">Pendaftaran</li>
         </ol>
         <div class="container border border-1 rounded-4 p-4 mb-3">
-            <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="get">
+            <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="get" class="col-md-2">
                 <input type="hidden" name="page" value="cek-pendaftaran-admin">
                 <select class="form-select" name="sort">
                     <option value="rerata">Rerata</option>
                     <option value="tgl_submit">Tanggal Submit</option>
                 </select>
+                <br>
                 <button type="submit">Sort</button>
             </form>
             <br>
